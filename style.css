@@ -61,7 +61,8 @@
 /*--- Section 1--- */
 
     .container{
-        margin: 0 10vw;
+        /* width: 1080px; */
+        margin: 0 10%;
     }
 
     .top-wrapper{
@@ -90,7 +91,7 @@
         background-position: center; 
         background-repeat: no-repeat; 
         background-size: cover;
-        height: 95%;
+        max-height: 495px;
     }
 
     .line-box {
@@ -100,10 +101,6 @@
     .line-box .container{
         display: flex;
         font-size: 24px;
-    }
-
-    .line-box .container{
-        display: flex;
         justify-content: center;
     }
 
@@ -143,8 +140,7 @@
     .about img{
         position: absolute;
         left: 0;
-        width: 48vw;
-        min-height: 50%;
+        max-width: 50%;
     }
 
     .about-wrapper{
@@ -288,4 +284,235 @@
     .detail-card img{
         margin-left: 5px;
         width: 15px;
+    }
+
+
+
+/*----- Section 5------ */
+
+    .box-achievement {
+        background-color: #f6f6f6;
+    }
+    .box-achievement .container{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        justify-content: center;
+    }
+
+    .box-wrapper-achievement{
+        margin: 30px 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-wrapper-achievement img{
+        margin-bottom: 5px;
+    }
+
+    .box-wrapper-achievement p{
+        color: #88AA00;
+        margin-top: 5px;
+        font-family: 'merriweather', serif;
+    }
+
+
+/*----- Section 6------ */
+
+/* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    
+/*--------Section 7--------- */
+
+    .box-greeting {
+        background-color: #f6f6f6;
+        padding-bottom: 100px;
+    }
+    .greeting-content{
+        text-align: center;
+        padding: 30px;
+        font-size: 18px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .greeting-content div p:nth-child(2){
+        font-weight: 700;
+    }
+    .greeting-content div p:nth-child(1){
+        font-family: 'merriweather', serif;
+        font-size: 18px;
+        margin-top: 10px;
+        line-height: 28px;
+    }
+    .greeting-content div p:nth-child(3){
+        font-family: 'merriweather', serif;
+        font-size: 16px;
+    }
+
+
+/*----- footer----- */
+
+    footer{
+        background: linear-gradient(95.9deg, #A7C826 -6.86%, #2BA02F 103.01%);
+        color: #FFFFFF;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -60px;
+    }
+    .footer-logo a{
+        font-family: Merriweather;
+        font-size: 24px;
+        color: #FFFFFF;
+        width: 200px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    footer ul{
+        margin-right: 60px;
+    }
+    footer ul li{
+        list-style-type: none;
+    }
+
+    footer ul li a{
+        padding: 15px 0px;
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .footer-divided{
+        display: flex;
+        margin-top: 40px;
+
+    }
+    .footer-content-divided{
+        display: flex;
+        margin-right: 100px;
+    }
+    .footer-divided ul li{
+        margin: 10px;
+    }
+    .footer-divided p{
+        font-size: 14px;
+        line-height: 21px;
+        width: 270px;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+    .footer-divided img{
+        margin-top: 10px;
+    }
+    footer .copyright{
+        background-color: #FFFFFF;
+        width: 100vw;
+        color: #303030;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        color: #707070;
     }

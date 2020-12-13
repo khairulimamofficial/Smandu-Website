@@ -173,9 +173,6 @@
                             </div>
                         </div>
 
-
-
-
                     </div>
                     <div class="see-more">
                         <a>Artikel Lainnya</a>
@@ -185,24 +182,22 @@
         </section>
 
         <!-------- Section 5 ------------>
-        <section>
+        <section class="box-achievement">
             <div class="container">
-                <div class="box-achievement">
-                    <div>
-                        <img src="" alt="Tropi">
-                        <p>87</p>
-                        <p>Prestasi</p>
-                    </div>
-                    <div>
-                        <img src="" alt="Tropi">
-                        <p>87</p>
-                        <p>Prestasi</p>
-                    </div>
-                    <div>
-                        <img src="" alt="Tropi">
-                        <p>87</p>
-                        <p>Prestasi</p>
-                    </div>
+                <div class="box-wrapper-achievement">
+                    <img src="assets/src/trophy.svg" alt="Tropi">
+                    <p>87</p>
+                    <p>Prestasi</p>
+                </div>
+                <div class="box-wrapper-achievement">
+                    <img src="assets/src/trophy.svg" alt="Tropi">
+                    <p>87</p>
+                    <p>Prestasi</p>
+                </div>
+                <div class="box-wrapper-achievement">
+                    <img src="assets/src/trophy.svg" alt="Tropi">
+                    <p>87</p>
+                    <p>Prestasi</p>
                 </div>
             </div>
         </section>
@@ -211,17 +206,52 @@
         <section>
             <div class="container">
                 <div class="content-wrapper">
-                    <!--Carrousel Here-->
+                    <h2>Gallery</h2>
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/src/carousel.png" style="width:100%">
+                        <div class="text">Caption Text</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/src/carousel.png" style="width:100%">
+                        <div class="text">Caption Two</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/src/carousel.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-------- Section 7 ------------>
-        <section>
+        <section class="box-greeting">
             <div class="container">
                 <div class="greeting-content">
                     <div>
-                        <img src="" alt="foto-kepsek">
+                        <img src="assets/src/headmaster.svg" alt="foto-kepsek">
                         <p>Drs. Buang Agus S</p>
                         <p>Kepala Sekolah SMA Negeri 2 Medan</p>
                     </div>
@@ -229,8 +259,8 @@
                         <p>
                             Sejak tahun 1957, tentu telah cukup banyak karya nyata 
                             yang telah diperbuat, di antaranya telah menghasilkan 
-                            alumni yang mulai tersebar di seluruh pelosok Nusantara dan m
-                            enyumbangkan kemajuan dalam pembangunan nasional negeri tercinta.
+                            alumni yang mulai tersebar di seluruh pelosok Nusantara dan 
+                            menyumbangkan kemajuan dalam pembangunan nasional negeri tercinta.
                         </p>
                     </div>
                 </div>
@@ -238,51 +268,53 @@
         </section>
 
         <footer>
-            <div>
-                <img src="" alt="logo">
-                <a>SMA NEGERI 2 MEDAN</a>
-            </div>
-            <div>
-                <div>
-                    <div class="left-footer">
-                        <ul>
-                            <li><a>Beranda</a></li>
-                            <li><a>Profil</a></li>
-                            <li><a>Akademik</a></li>
-                            <li><a>Organisasi</a></li>
-                            <li><a>Direktori</a></li>
-                        </ul>
-                    </div>
-                    <div class="middle-footer">
-                        <ul>
-                            <li><a>Beranda</a></li>
-                            <li><a>Profil</a></li>
-                            <li><a>Akademik</a></li>
-                            <li><a>Organisasi</a></li>
-                            <li><a>Direktori</a></li>
-                        </ul>
-                    </div>
+            <div class="container">
+                <div class="footer-logo">
+                    <img src="assets/src/logo-footer.png" alt="logo">
+                    <a>SMA NEGERI 2 MEDAN</a>
                 </div>
-                <div>
-                    <div>
-                        <p>Jl. Karang Sari No. 435 Medan Polonia, Sumatera Utara</p>
-                        <p>061 - 7862140</p>
-                        <p>info@sman2medan.sch.id</p>
-                        <p>sman2.medan@yahoo.com</p>
+                <div class="footer-divided">
+                    <div class="footer-content-divided">
+                        <div class="left-footer">
+                            <ul>
+                                <li><a>Profil</a></li>
+                                <li><a>Akademik</a></li>
+                                <li><a>Siswa</a></li>
+                                <li><a>Guru</a></li>
+                                <li><a>Alumni</a></li>
+                            </ul>
+                        </div>
+                        <div class="middle-footer">
+                            <ul>
+                                <li><a>Artikel</a></li>
+                                <li><a>Kegiatan</a></li>
+                                <li><a>Organisasi</a></li>
+                                <li><a>Kontak</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div>
-                        <img src="" alt="Instagram">
-                        <img src="" alt="Instagram">
-                        <img src="" alt="Instagram">
-                        <img src="" alt="Instagram">
-                        <img src="" alt="Instagram">
+                        <div>
+                            <p>Jl. Karang Sari No. 435 Medan Polonia, Sumatera Utara</p>
+                            <p>061 - 7862140</p>
+                            <p>info@sman2medan.sch.id<br>sman2.medan@yahoo.com</p>
+                        </div>
+                        <div>
+                            <img src="assets/src/instagram.svg" alt="Instagram">
+                            <img src="assets/src/instagram.svg" alt="Instagram">
+                            <img src="assets/src/instagram.svg" alt="Instagram">
+                            <img src="assets/src/instagram.svg" alt="Instagram">
+                            <img src="assets/src/instagram.svg" alt="Instagram">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <p>Copyright @ 2020 SMA Negeri 2 Medan, All Right Reserved.</p>
+                <div class="copyright">
+                    <p>Copyright @ 2020 SMA Negeri 2 Medan, All Right Reserved.</p>
+                </div>
             </div>
         </footer>
+
+        <script src="script.js"></script>
     </main>
 </body>
 </html>
