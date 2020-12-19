@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Negeri 2 Medan</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-item">
+                <img src="/assets/src/logo.png" alt="Logo">
+                <a>SMA Negeri 2 Medan</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a>Beranda</a></li>
+                    <li><a>Profil</a></li>
+                    <li><a>Akademik</a></li>
+                    <li><a>Organisasi</a></li>
+                    <li><a>Direktori</a></li>
+                    <li><a>Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-------- Section 1 ------------>
+
+        <section class="direktori-siswa">
+            <div class="container">
+                <div class="direktori-container">
+                    <div class="direktori-siswa-wrapper">
+                        <h2>Direktori Alumni</h2>
+                    </div>
+                    <div class="direktori-wrapper">
+                        <form class="direktori">
+                            <input type="text" id="search-siswa" name="search-siswa" placeholder="Cari melalui Nama/Universitas Alumni">
+                            <input type="submit" value="Cari">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="alumni-container">
+                    <div class="card-container">
+                        <div class="card">
+                            <a>
+                                <div class="card-model">
+                                    <img src="/assets/src/model-alumni.png" alt="model">
+                                </div>
+                                <div class="card-content">
+                                    <div>
+                                        <a>SNMPTN & SBMPTN</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card-model">
+                                <img src="/assets/src/model-alumni.png" alt="model">
+                            </div>
+                            <div class="card-content">
+                                <div>
+                                    <a>List Alumni</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-model">
+                                <img src="/assets/src/model-alumni.png" alt="model">
+                            </div>
+                            <div class="card-content">
+                                <div>
+                                    <a>Daftar sebagai Alumni</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="heading-direktori">
+            <div class="container">
+                <h2>Daftar Sebagai Alumni</h2>
+            </div>
+        </section>
+
+        <section class="form-wrapper">
+            <div class="container">
+                <div class="form-alumni">
+                    <h3>Formulir</h3>
+                    <div class="form-container-alumni">
+                        <p>Silakan mengisi Formulir ini dengan benar. 
+                            Pihak sekolah akan memverifikasi formulir 
+                            Anda apabila data telah dikirimkan.</p>
+                        <div>
+                            <form method="POST" id="register-form" class="form-register">
+                                <label for="fname">Nama Lengkap</label>
+                                <input required type="text" id="fname" name="fname" placeholder="Masukkan nama lengkap...">
+                                
+                                <label for="gender">Jenis Kelamin</label>
+                                <select name="gender" id="gender" required>
+                                    <option value="">Pilih</option>
+                                    <option value="male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+
+                                <div class="left">
+                                    <label for="fname">Tempat Lahir</label>
+                                    <input required type="text" id="fname" name="fname" placeholder="Masukkan nama lengkap...">   
+                                </div>
+                                <div class="right">
+                                    <label for="bod">Tanggal Lahir</label>
+                                    <input required type="date" id="bod" name="bod">
+                                </div>
+
+                                <label for="email">Alamat Tempat Tinggal</label>
+                                <input required type="email" id="email" name="email" placeholder="Masukkan alamat...">
+
+                                <label for="email">Email</label>
+                                <input required type="email" id="email" name="email" placeholder="Masukkan alamat email...">
+                                
+                                <label for="phone">No. Telepon</label>
+                                <input required type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon...">
+       
+                                <label for="form-socialmedia">Sosial Media</label>
+                                <div class="form-socialmedia">
+                                    <label for="phone">Instagram</label>
+                                    <input required type="text" id="instagram" name="instagram" placeholder="Masukkan nomor telepon...">
+                                </div>
+                                <div class="form-socialmedia">
+                                    <label for="phone">Twitter</label>
+                                    <input required type="text" id="twitter" name="twitter" placeholder="Masukkan nomor telepon...">
+                                </div>
+                                <div class="form-socialmedia">
+                                    <label for="phone">Facebook</label>
+                                    <input required type="text" id="facebook" name="facebook" placeholder="Masukkan nomor telepon...">
+                                </div>
+                                <div class="form-socialmedia" style="margin-bottom: 30px;">
+                                    <label for="phone">LinkedIn</label>
+                                    <input required type="text" id="linkedin" name="linkedin" placeholder="Masukkan nomor telepon...">
+                                </div>
+
+                                <label for="tamat">Tahun Tamat</label>
+                                <select name="tamat" id="tamat" required>
+                                    <option value="">Tahun</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                </select>
+
+                                <label for="fname">Riwayat Pendidikan</label>
+                                <input required type="text" id="fname" name="fname" placeholder="Masukkan nama lengkap...">
+
+                                <label for="fname">Pekerjaan</label>
+                                <input required type="text" id="fname" name="fname" placeholder="Masukkan Pekerjaan...">
+                                <input required type="text" id="fname" name="fname" placeholder="Opsional">
+
+                                <label for="myfile-skl">Surat Keterangan Lulus (SKL) atau Ijazah dari SMAN 2 Medan</label>
+                                <input type="file" id="myfile-skl" name="myfile-skl"><br><br>
+
+                                <label for="myfile-bukti">Bukti sebagai mahasiswa di universitas terkait</label>
+                                <input type="file" id="myfile-bukti" name="myfile-bukti"><br><br>
+
+                                <div class="form-socialmedia upload-profile">
+                                    <img src="/assets/src/form-profil.png" alt="profile">
+                                    <div>
+                                        <label for="phone">Masukkan Gambar untuk Foto Profil</label>
+                                        <input type="file" id="myfile-profil" name="myfile-bukti"><br><br>
+                                    </div>
+                                </div>                              
+                                
+                                <input type="submit" form="register-form" value="Kirim"></Input>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="/assets/src/logo-footer.png" alt="logo">
+                <a>SMA NEGERI 2 MEDAN</a>
+            </div>
+            <div class="footer-divided">
+                <div class="footer-content-divided">
+                    <div class="left-footer">
+                        <ul>
+                            <li><a>Profil</a></li>
+                            <li><a>Akademik</a></li>
+                            <li><a>Siswa</a></li>
+                            <li><a>Guru</a></li>
+                            <li><a>Alumni</a></li>
+                        </ul>
+                    </div>
+                    <div class="middle-footer">
+                        <ul>
+                            <li><a>Artikel</a></li>
+                            <li><a>Kegiatan</a></li>
+                            <li><a>Organisasi</a></li>
+                            <li><a>Kontak</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Jl. Karang Sari No. 435 Medan Polonia, Sumatera Utara</p>
+                        <p>061 - 7862140</p>
+                        <p>info@sman2medan.sch.id<br>sman2.medan@yahoo.com</p>
+                    </div>
+                    <div>
+                        <img src="/assets/src/instagram.svg" alt="Instagram">
+                        <img src="/assets/src/instagram.svg" alt="Instagram">
+                        <img src="/assets/src/instagram.svg" alt="Instagram">
+                        <img src="/assets/src/instagram.svg" alt="Instagram">
+                        <img src="/assets/src/instagram.svg" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ 2020 SMA Negeri 2 Medan, All Right Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
